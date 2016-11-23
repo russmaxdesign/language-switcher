@@ -1,0 +1,28 @@
+// base font size
+
+$base-font-size: 1em;
+$base-font-family: helvetica, arial, sans-serif;
+
+
+// font variables
+
+$font24: $base-font-size * 1.5;
+$font22: $base-font-size * 1.375;
+$font20: $base-font-size * 1.25;
+$font18: $base-font-size * 1.125;
+$font16: $base-font-size;
+$font14: $base-font-size * .875;
+$font12: $base-font-size * .75;
+$font10: $base-font-size * .625;
+
+
+// font helpers
+
+.font24 { font-size: $font24; }
+.font22 { font-size: $font22; }
+.font20 { font-size: $font20; }
+.font18 { font-size: $font18; }
+.font16 { font-size: $font16; }
+.font14 { font-size: $font14; }
+.font12 { font-size: $font12; }
+.font10 { font-size: $font10; }

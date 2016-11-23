@@ -1,0 +1,160 @@
+// box-sizing
+
+* {
+  box-sizing: border-box;
+}
+
+
+// body
+
+body {
+  margin: 0;
+  padding: 20px;
+  color: $base-text-color;
+  background: $base-background-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 1.2;
+}
+
+
+// headings
+
+h1 {
+  margin: 0 0 .5em;
+  font-size: 1.8em;
+}
+
+h2 {
+  margin: 1em 0 .5em;
+  font-size: 1.4em;
+}
+
+h3 {
+  margin: 1.5em 0 .3em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 1.5em 0 .3em;
+  font-size: .88888888em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $secondary-color;
+}
+
+
+// paragraphs
+
+p {
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+
+// img
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+// links
+
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-color-visited;
+}
+
+a:focus,
+a:hover {
+  color: $link-color-hover;
+}
+
+a:active {
+  color: $link-color-active;
+}
+
+
+// hr
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  margin: 2em 0;
+  background: $gray5;
+}
+
+
+// figure
+
+figure {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: $font14;
+  color: $gray55;
+  display: block;
+  margin: .4em 0;
+}
+
+
+// tables
+
+table {
+  width: 100%;
+  margin: 1em 0 2em;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 0 0 .5em;
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: 1px solid $base-table-color;
+  padding: .5em 1em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  border-top: 1px solid $base-table-color;
+  border-bottom: 2px solid $base-table-color;
+  font-weight: bold;
+}
+
+
+// lists
+
+ul,
+ol {
+  padding-left: 1.5em;
+  li {
+    margin-bottom: .2em;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 .5em;
+  padding-left: 1.5em;
+}

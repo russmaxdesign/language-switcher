@@ -1,0 +1,120 @@
+// container
+
+.container {
+  max-width: 38em;
+  margin: 0 auto;
+}
+
+
+// hidden-text extend - to hide text offscreen
+
+%hidden,
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+}
+
+
+// markup headings
+
+.markup-heading {
+  color: $secondary-color;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+// example
+
+.example {
+  border: 1px solid $base-border-color;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+
+// input styles
+
+.input {
+  margin-bottom: 1em;
+}
+
+.input__content {
+  display: block;
+  margin: 0 0 .2em;
+}
+
+.input__control {
+  display: block;
+  width: 100%;
+  height: 2.2em;
+  border: 1px solid $base-border-color;
+  border-radius: .2em;
+  padding: 0 .5em;
+  color: $gray50;
+  background-color: $white;
+  font-size: 1em;
+  line-height: 2.2em;
+}
+
+
+// button-primary
+
+.button-primary {
+  height: 2.2em;
+  border: 1px solid darken($link-color, 10%);
+  border-radius: .2em;
+  padding: 0 1em;
+  cursor: pointer;
+  color: $white;
+  background: $link-color;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 2.2em;
+}
+
+.button-primary:focus,
+.button-primary:hover {
+  border: 1px solid darken($link-color-hover, 10%);
+  color: $white;
+  background: $link-color-hover;
+}
+
+.button-primary:active {
+  border: 1px solid darken($link-color-active, 10%);
+  color: $white;
+  background: $link-color-active;
+}
+
+
+// button-secondary
+
+.button-secondary {
+  height: 2.2em;
+  border: 1px solid $base-border-color;
+  border-radius: .2em;
+  padding: 0 1em;
+  cursor: pointer;
+  color: $link-color;
+  background: $white;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 2.2em;
+}
+
+.button-secondary:focus,
+.button-secondary:hover {
+  color: $link-color-hover;
+  background: $gray5;
+}
+
+.button-secondary:active {
+  color: $link-color-active;
+  background: $gray10;
+}
