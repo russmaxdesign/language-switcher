@@ -23,50 +23,99 @@
     </ul>
 
     <h2>Examples</h2>
-    <h3>Unstyled</h3>
-    <div role="radiogroup" aria-labelledby="language-switcher0">
-      <p id="language-switcher0">Choose a language for this website</p>
+    
+    <h3>Unstyled using native HTML radio group</h3>
+    <fieldset>
+      <input type="radio" id="language0-fr" name="language-switch0">
+      <label for="language0-fr" lang="fr">
+        FR<span> Français</span>
+      </label>
+      <input type="radio" id="language0-en" name="language-switch0">
+      <label for="language0-en" lang="en">
+        EN<span> English</span>
+      </label>
+    </fieldset>
+
+    <h3>Unstyled using WAI-ARIA</h3>
+    <div role="radiogroup" aria-labelledby="language-switcher1">
+      <p id="language-switcher1">Choose a language for this website</p>
       <div>
-        <input type="radio" id="language0-1" name="language-switch0">
-        <label for="language0-1" lang="fr">
+        <input type="radio" id="language1-1" name="language-switch1">
+        <label for="language1-1" lang="fr">
           FR<span> Français</span>
         </label>
       </div>
       <div>
-        <input type="radio" id="language0-2" name="language-switch0">
-        <label for="language0-2" lang="en">
+        <input type="radio" id="language1-2" name="language-switch1">
+        <label for="language1-2" lang="en">
           EN<span> English</span>
         </label>
       </div>
     </div>
-    <h3>Unchecked by default</h3>
-    <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
-      <p class="hidden" id="language-switcher1">Choose a language for this website</p>
+
+    <h3>Unchecked by default using native HTML radio group</h3>
+    <fieldset class="language">
+      <legend class="hidden">Choose a language for this website</legend>
       <div class="language__container--left language__container--fr">
-        <input class="language__control" type="radio" id="language1-1" name="language-switch1">
-        <label class="language__label" for="language1-1" lang="fr">
+        <input class="language__control" type="radio" id="language2-fr" name="language-switch2">
+      <label class="language__label" for="language2-fr" lang="fr">
+        FR<span class="hidden"> Français</span>
+      </label>
+      </div>
+      <div class="language__container--right language__container--en">
+        <input class="language__control" type="radio" id="language2-en" name="language-switch2">
+        <label class="language__label" for="language2-en" lang="en">
+          EN<span class="hidden"> English</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <h3>Unchecked by default using WAI-ARIA</h3>
+    <div class="language" role="radiogroup" aria-labelledby="language-switcher3">
+      <p class="hidden" id="language-switcher3">Choose a language for this website</p>
+      <div class="language__container--left language__container--fr">
+        <input class="language__control" type="radio" id="language3-1" name="language-switch3">
+        <label class="language__label" for="language3-1" lang="fr">
           FR<span class="hidden"> Français</span>
         </label>
       </div>
       <div class="language__container--right language__container--en">
-        <input class="language__control" type="radio" id="language1-2" name="language-switch1">
-        <label class="language__label" for="language1-2" lang="en">
+        <input class="language__control" type="radio" id="language3-2" name="language-switch3">
+        <label class="language__label" for="language3-2" lang="en">
           EN<span class="hidden"> English</span>
         </label>
       </div>
     </div>
-    <h3>Checked by default</h3>
-    <div class="language" role="radiogroup" aria-labelledby="language-switcher2">
-      <p class="hidden" id="language-switcher2">Choose a language for this website</p>
+    
+    <h3>Checked by default using native HTML radio group</h3>
+    <fieldset class="language">
+      <legend class="hidden">Choose a language for this website</legend>
       <div class="language__container--left language__container--fr">
-        <input class="language__control" type="radio" id="language2-1" name="language-switch2">
-        <label class="language__label" for="language2-1" lang="fr">
+        <input class="language__control" type="radio" id="language4-fr" name="language-switch4">
+        <label class="language__label" for="language4-fr" lang="fr">
           FR<span class="hidden"> Français</span>
         </label>
       </div>
       <div class="language__container--right language__container--en">
-        <input class="language__control" type="radio" id="language2-2" name="language-switch2" checked>
-        <label class="language__label" for="language2-2" lang="en">
+        <input class="language__control" type="radio" id="language4-en" name="language-switch4" checked>
+        <label class="language__label" for="language4-en" lang="en">
+          EN<span class="hidden"> English</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <h3>Checked by default using WAI-ARIA</h3>
+    <div class="language" role="radiogroup" aria-labelledby="language-switcher5">
+      <p class="hidden" id="language-switcher5">Choose a language for this website</p>
+      <div class="language__container--left language__container--fr">
+        <input class="language__control" type="radio" id="language5-1" name="language-switch5">
+        <label class="language__label" for="language5-1" lang="fr">
+          FR<span class="hidden"> Français</span>
+        </label>
+      </div>
+      <div class="language__container--right language__container--en">
+        <input class="language__control" type="radio" id="language5-2" name="language-switch5" checked>
+        <label class="language__label" for="language5-2" lang="en">
           EN<span class="hidden"> English</span>
         </label>
       </div>
@@ -110,9 +159,11 @@ $language-checked: #ddd;
 .language {
   width: $language-width * 2;
   height: $language-height;
+  border: 0;
   font-size: 14px;
   line-height: 1;
   margin: 1em 0;
+  padding: 0;
 }
 
 .language__container--left,
